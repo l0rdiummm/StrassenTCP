@@ -194,7 +194,7 @@ public class TCPServer {
         }
         
         String fromClient;
-        String address = "192.168.56.1"; // Server's address
+        String address = ""; // Server's address, enter the host computers IP address here
         
         // Initial router communication
         out.println(address);
