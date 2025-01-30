@@ -40,7 +40,7 @@ public class TCPClient {
         
         // Tries to connect to the ServerRouter
         try {
-            Socket = new Socket("192.168.56.1", SockNum);
+            Socket = new Socket("", SockNum); //Enter the host computer's IP address in the ""
             out = new PrintWriter(Socket.getOutputStream(), true);
             in = new BufferedReader(new InputStreamReader(Socket.getInputStream()));
         } catch (UnknownHostException e) {
